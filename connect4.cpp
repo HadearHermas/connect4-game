@@ -10,12 +10,13 @@ Connect4::void Print()
 }
 Connect4::Connect4(player Firstplayer)
 {
-
+    class_p=Firstplayer;
+    class_gs
 }
 
 Connect4::player GetCurrentPlayer()
 {
-
+   return !class_p;
 
 }
 
