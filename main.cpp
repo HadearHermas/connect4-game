@@ -6,6 +6,7 @@ using namespace std;
 
 enum GameState{finished,okay,repeat,red_wins,yellow_wins,Tie};
 enum player{Red,Yellow};
+enum board_holes{Red,Yellow,Empty};
 //  you may add any enums or global variables you need
 
 //////////////////////Don't change any thing in the following code////////////////////////////////
@@ -26,6 +27,7 @@ string print(player p)
 	if(p==Red) return "Red";
 	else return "Yellow";
 }
+
 GameState g1[]={okay,okay,okay,okay,okay,okay,repeat,repeat,repeat,okay,okay,okay,okay,red_wins,finished,finished,finished};
 player p1[]={Yellow,Red,Yellow,Red,Yellow,Red,Red,Red,Red,Yellow,Red,Yellow,Red,Red,Red,Red,Red};
 GameState g2[]={okay,okay,okay,okay,okay,okay,okay,okay,okay,okay,okay,okay,okay,okay,okay,okay,okay,okay,okay,okay,yellow_wins,finished};
